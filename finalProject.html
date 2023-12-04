@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,14 +30,68 @@
             margin: 5px 0 0;
             font-size: 1.2em;
         }
+
+        form {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.2em;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        table {
+            margin-top: 20px;
+            width: 80%;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Build Your Meal Plan</h1>
         <p>Christopher Martinez Hernandez | Web Markup and Scripting | WEB.115.0002</p>
     </header>
-    
+
     <form id="form">
         <label>Please Enter your Name</label>
         <input type="text" name="name" id="name" placeholder="Name">
@@ -59,8 +114,13 @@
         <label for="m5">meal 5<br></label>
         <input type="text" name="m5" id="m5" placeholder="Dinner"><br>
 
-        <button type="button" id="Meal" >Calulate Meal Plan</button>
-    </form>
+        <button type="button" id="Meal">Calulate Meal Plan</button>
+        
+        <button type="button" id="clear">Clear</button>
 
+        <button id="downloadButton">Download</button>
+    </form>
+    <table id="myTable"></table>
 </body>
+
 </html>
